@@ -1,0 +1,27 @@
+[0.395s] Invoking command in '/home/ethan/ros2/chapt3/topic_ws/src/demo_python_topic': PYTHONPATH=/home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_topic build --build-base /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/build install --record /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/install.log --single-version-externally-managed install_data
+[0.515s] running egg_info
+[0.517s] writing ../../build/demo_python_topic/demo_python_topic.egg-info/PKG-INFO
+[0.518s] writing dependency_links to ../../build/demo_python_topic/demo_python_topic.egg-info/dependency_links.txt
+[0.519s] writing entry points to ../../build/demo_python_topic/demo_python_topic.egg-info/entry_points.txt
+[0.519s] writing requirements to ../../build/demo_python_topic/demo_python_topic.egg-info/requires.txt
+[0.519s] writing top-level names to ../../build/demo_python_topic/demo_python_topic.egg-info/top_level.txt
+[0.520s] reading manifest file '../../build/demo_python_topic/demo_python_topic.egg-info/SOURCES.txt'
+[0.520s] adding license file 'LICENSE'
+[0.520s] writing manifest file '../../build/demo_python_topic/demo_python_topic.egg-info/SOURCES.txt'
+[0.521s] running build
+[0.521s] running build_py
+[0.521s] copying demo_python_topic/novel_sub_baidu_node.py -> /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/build/lib/demo_python_topic
+[0.521s] running install
+[0.521s] running install_lib
+[0.522s] copying /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/build/lib/demo_python_topic/novel_sub_baidu_node.py -> /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic
+[0.522s] byte-compiling /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/novel_sub_baidu_node.py to novel_sub_baidu_node.cpython-310.pyc
+[0.524s] running install_data
+[0.524s] running install_egg_info
+[0.525s] removing '/home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic-0.0.0-py3.10.egg-info' (and everything under it)
+[0.529s] Copying ../../build/demo_python_topic/demo_python_topic.egg-info to /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic-0.0.0-py3.10.egg-info
+[0.529s] running install_scripts
+[0.541s] Installing novel_pub_node script to /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/demo_python_topic
+[0.542s] Installing novel_sub_baidu_node script to /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/demo_python_topic
+[0.542s] Installing novel_sub_node script to /home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/demo_python_topic
+[0.542s] writing list of installed files to '/home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/install.log'
+[0.557s] Invoked command in '/home/ethan/ros2/chapt3/topic_ws/src/demo_python_topic' returned '0': PYTHONPATH=/home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ethan/ros2/chapt3/topic_ws/install/demo_python_topic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_topic build --build-base /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/build install --record /home/ethan/ros2/chapt3/topic_ws/build/demo_python_topic/install.log --single-version-externally-managed install_data

@@ -1,0 +1,29 @@
+[0.016s] Invoking command in '/home/ethan/ros2/chapt3/topic_practice_ws/build/status_display': CMAKE_PREFIX_PATH=/home/ethan/ros2/chapt3/topic_practice_ws/install/status_interfaces:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_display:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --build /home/ethan/ros2/chapt3/topic_practice_ws/build/status_display -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target hello_qt[0m
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target sys_status_display[0m
+[0.056s] [ 50%] Built target hello_qt
+[0.065s] [ 75%] [32mBuilding CXX object CMakeFiles/sys_status_display.dir/src/sys_status_display.cpp.o[0m
+[6.247s] [100%] [32m[1mLinking CXX executable sys_status_display[0m
+[6.895s] [100%] Built target sys_status_display
+[6.902s] Invoked command in '/home/ethan/ros2/chapt3/topic_practice_ws/build/status_display' returned '0': CMAKE_PREFIX_PATH=/home/ethan/ros2/chapt3/topic_practice_ws/install/status_interfaces:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_display:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --build /home/ethan/ros2/chapt3/topic_practice_ws/build/status_display -- -j8 -l8
+[6.903s] Invoking command in '/home/ethan/ros2/chapt3/topic_practice_ws/build/status_display': CMAKE_PREFIX_PATH=/home/ethan/ros2/chapt3/topic_practice_ws/install/status_interfaces:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_display:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --install /home/ethan/ros2/chapt3/topic_practice_ws/build/status_display
+[6.908s] -- Install configuration: ""
+[6.908s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/lib/status_display/hello_qt
+[6.909s] -- Installing: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/lib/status_display/sys_status_display
+[6.912s] -- Set runtime path of "/home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/lib/status_display/sys_status_display" to ""
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/ament_index/resource_index/package_run_dependencies/status_display
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/ament_index/resource_index/parent_prefix_path/status_display
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.sh
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.dsv
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/environment/path.sh
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/environment/path.dsv
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/local_setup.bash
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/local_setup.sh
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/local_setup.zsh
+[6.912s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/local_setup.dsv
+[6.912s] -- Installing: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/package.dsv
+[6.913s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/ament_index/resource_index/packages/status_display
+[6.913s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig.cmake
+[6.913s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig-version.cmake
+[6.913s] -- Up-to-date: /home/ethan/ros2/chapt3/topic_practice_ws/install/status_display/share/status_display/package.xml
+[6.914s] Invoked command in '/home/ethan/ros2/chapt3/topic_practice_ws/build/status_display' returned '0': CMAKE_PREFIX_PATH=/home/ethan/ros2/chapt3/topic_practice_ws/install/status_interfaces:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_display:/home/ethan/ros2/chapt3/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --install /home/ethan/ros2/chapt3/topic_practice_ws/build/status_display
