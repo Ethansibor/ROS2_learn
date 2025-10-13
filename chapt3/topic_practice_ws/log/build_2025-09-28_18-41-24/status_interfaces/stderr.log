@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:13 (rosidl_default_interfaces):
-  Unknown CMake command "rosidl_default_interfaces".
-
-[0m

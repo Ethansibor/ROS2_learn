@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000417] (-) JobUnselected: {'identifier': 'demo_cpp_topic'}
-[0.000439] (-) JobUnselected: {'identifier': 'demo_python_topic'}
-[0.000449] (-) EventReactorShutdown: {}
