@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'demo_python_service'
+package_name = 'learning_service'
 
 setup(
     name=package_name,
@@ -10,7 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name+ "/resource",['resource/football.jpg','resource/test1.jpg']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -21,9 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'learn_face_detect = demo_python_service.learn_face_detect:main',
-            'face_detect_node = demo_python_service.face_detect_node:main',
-            
+            'service_adder_client  = learning_service.service_adder_client:main',
+            'service_adder_server  = learning_service.service_adder_server:main',
         ],
     },
 )
