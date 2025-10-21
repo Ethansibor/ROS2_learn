@@ -17,7 +17,7 @@ class FaceDetectorionNode(Node):
                                            self.detect_face_callback)
         self.default_image_path = get_package_share_directory('demo_python_service')+'/resource/football.jpg'
         self.upsample_times = 1
-        self.model = "cnn"
+        self.model = "hog"
 
     def detect_face_callback(self,request,response):
         # 完成人脸检测
