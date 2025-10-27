@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/ethan/ros2/chapt4/chapt4_ws/src/chapt4_interfaces"
+    "cmake.sourceDirectory": "/home/ethan/ros2/chapt4/chapt4_ws/src/chapt4_interfaces",
+    "C_Cpp.errorSquiggles": "enabled"
 }

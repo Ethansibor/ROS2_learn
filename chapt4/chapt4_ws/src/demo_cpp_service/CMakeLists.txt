@@ -13,11 +13,14 @@ find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 
 add_executable(turtle_control src/turtle_control.cpp)
+add_executable(patrol_client src/patrol_client.cpp)
 
 ament_target_dependencies(turtle_control rclcpp geometry_msgs turtlesim chapt4_interfaces)
+ament_target_dependencies(patrol_client rclcpp   chapt4_interfaces)
 
 install(TARGETS
 turtle_control
+patrol_client
 DESTINATION lib/${PROJECT_NAME}
 )
 if(BUILD_TESTING)
