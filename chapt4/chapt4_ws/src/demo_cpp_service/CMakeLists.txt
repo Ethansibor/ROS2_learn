@@ -23,6 +23,12 @@ turtle_control
 patrol_client
 DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY 
+launch
+DESTINATION share/${PROJECT_NAME}
+)
+# 该指令用于将launch目录复制到install目录中对应功能包的share目录下，这样在运行时才能找到对应文件。
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

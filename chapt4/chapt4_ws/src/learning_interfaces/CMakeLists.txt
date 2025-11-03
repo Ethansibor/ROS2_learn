@@ -24,6 +24,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/AddTwoInts.srv"
+    "action/MoveCircle.action"
 )
 
 

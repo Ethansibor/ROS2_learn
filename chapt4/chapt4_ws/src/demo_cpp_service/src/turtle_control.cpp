@@ -3,7 +3,9 @@
 #include "turtlesim/msg/pose.hpp"
 // 1. 添加服务头文件并创建别名
 #include "chapt4_interfaces/srv/patrol.hpp"
+#include "rcl_interfaces/msg/set_parameters_result.hpp"
 using Patrol = chapt4_interfaces::srv::Patrol;
+using SetParametersResult = rcl_interfaces::msg::SetParametersResult;
 
 class TurtleController : public rclcpp::Node
 {
@@ -17,10 +19,35 @@ class TurtleController : public rclcpp::Node
 
         // 2. 添加Patrol类型服务共享指针 patrol_server_ 为成员变量
         rclcpp::Service<Patrol>::SharedPtr patrol_server_;
+        OnSetParametersCallbackHandle::SharedPtr parameters_callback_handle_;
     
     public:
         TurtleController() : Node("turtle_controller")
         {
+            // 声明和获取参数初始值
+            this->declare_parameter("k",1.0);
+            this->declare_parameter("max_speed",1.0);
+            this->get_parameter("k",k_);
+            this->get_parameter("max_speed",max_speed_);
+            //添加参数设置回调
+            parameters_callback_handle_ = this->add_on_set_parameters_callback([&](const std::vector<rclcpp::Parameter> &params)->SetParametersResult{
+                //遍历参数
+                for (auto param:params)
+                {
+                    RCLCPP_INFO(this->get_logger(),"更新参数 %s 值为：%f",param.get_name().c_str(),param.as_double());
+                    if(param.get_name()=="k")
+                    {
+                        k_ = param.as_double();
+                    }
+                    else if(param.get_name() == "max_speed")
+                    {
+                        max_speed_ = param.as_double();
+                    }
+                }
+                auto result = SetParametersResult();
+                result.successful = true;
+                return result;
+            });
             velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel",10);  
             pose_subscription_  = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose",10,std::bind(&TurtleController::on_pose_received_,this,std::placeholders::_1));
 

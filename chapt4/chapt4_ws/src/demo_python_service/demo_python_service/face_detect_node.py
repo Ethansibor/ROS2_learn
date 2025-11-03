@@ -16,7 +16,7 @@ class FaceDetectorionNode(Node):
                                            '/face_detect',
                                            self.detect_face_callback)
         self.default_image_path = get_package_share_directory('demo_python_service')+'/resource/football.jpg'
-        self.declare_parameter('face_locations_upsample_tSimes',1)
+        self.declare_parameter('face_locations_upsample_times',1)
         self.declare_parameter('face_locations_model',"hog")
         self.model = self.get_parameter("face_locations_model").value
         self.upsample_times = self.get_parameter('face_locations_upsample_times').value
