@@ -10,6 +10,17 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(interfaces REQUIRED)
 
+add_executable(publisher_node_cpp src/publisher_node.cpp)
+add_executable(subscriber_node_cpp src/subscriber_node.cpp)
+
+ament_target_dependencies(publisher_node_cpp rclcpp interfaces)
+ament_target_dependencies(subscriber_node_cpp rclcpp interfaces)
+
+install(TARGETS
+  publisher_node_cpp
+  subscriber_node_cpp
+  DESTINATION lib/${PROJECT_NAME}
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
