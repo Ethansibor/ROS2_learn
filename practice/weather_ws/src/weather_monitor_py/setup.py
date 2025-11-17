@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'monitor_node = weather_monitor_py.monitor_node:main',
+            'client_node = weather_monitor_py.client_node:main',
         ],
     },
 )
