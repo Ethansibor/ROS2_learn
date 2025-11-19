@@ -11,6 +11,29 @@ find_package(rclcpp REQUIRED)
 find_package(interfaces REQUIRED)
 find_package(rcl_interfaces REQUIRED)
 
+add_executable(monitor_node src/monitor_node.cpp)
+add_executable(client_node src/client_node.cpp)
+
+ament_target_dependencies(
+  monitor_node
+  rclcpp
+  interfaces
+  rcl_interfaces
+)
+
+ament_target_dependencies(
+  client_node
+  rclcpp
+  interfaces
+)
+# 安装节点
+install(
+  TARGETS
+  monitor_node
+  client_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
