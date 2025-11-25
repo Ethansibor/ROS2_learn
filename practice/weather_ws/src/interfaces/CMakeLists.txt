@@ -12,6 +12,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Weather.msg"
   "srv/SetThreshold.srv"
+  "msg/RobotStatus.msg"
+  "srv/ChargeRobot.srv"
 )
 
 if(BUILD_TESTING)
